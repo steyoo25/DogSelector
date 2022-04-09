@@ -1,23 +1,28 @@
 html {
-    background-color:cornflowerblue;
-    background-size:300px;
+    background: url("printbg.webp") no-repeat;
+    background-size: cover;
 }
 
 body {
     width: 800px;
-    background-color: white;
+    background-color: rgb(184, 218, 237);
     margin: 0 auto;
     height: 600px;
 }
 
-h1 {
+h1, button {
     font-family: 'Righteous';
     text-align: center;
     font-size : 35;
 }
 
+<<<<<<< HEAD
 .twocolumn {
     display: grid;
+=======
+select, label {
+    display : grid;
+>>>>>>> f3562d654d27392cf5c455ae8d6b0b42a974d07e
     font-size: 14px;
     grid-template-columns: auto auto;
 }
@@ -29,6 +34,7 @@ label {
 
 select {
     width: 20em;
+<<<<<<< HEAD
 }
 
 button {
@@ -43,4 +49,6 @@ button {
     align-items: center;
     justify-content: center;
     row-gap: 10px;
+=======
+>>>>>>> f3562d654d27392cf5c455ae8d6b0b42a974d07e
 }
