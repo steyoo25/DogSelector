@@ -1,16 +1,16 @@
 html {
-    background-color:cornflowerblue;
-    background-size:300px;
+    background: url("printbg.webp") no-repeat;
+    background-size: cover;
 }
 
 body {
     width: 800px;
-    background-color: white;
+    background-color: rgb(184, 218, 237);
     margin: 0 auto;
     height: 600px;
 }
 
-h1 {
+h1, button {
     font-family: 'Righteous';
     text-align: center;
     font-size : 35;
@@ -38,7 +38,7 @@ select {
 button {
     width: 10em;
     border: 2px solid rgb(71, 103, 163);
-    background-color: cornflowerblue;
+    background-color: white;
     margin: 10px 10px 10px 10px;
 }
 
