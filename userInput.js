@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //import * as fs from 'fs';
+=======
+// import {hypoAllergy, newArray} from './dogObjects.js';
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 var Dog = /** @class */ (function () {
     function Dog(breedName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard) {
         this.breedName = breedName;
@@ -11,15 +15,24 @@ var Dog = /** @class */ (function () {
         this.aorh = aorh;
         this.train = train;
         this.yard = yard;
+<<<<<<< HEAD
         this.point = 0;
+=======
+        this.points = 0;
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     }
     return Dog;
 }());
 var newArray = new Array();
 var hypoAllergy = new Array();
+<<<<<<< HEAD
 //const file = fs.readFileSync('allDogs.txt','utf-8').split('\n');
 var f = "LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;".split('\n');
 f.forEach(function (line) {
+=======
+var file = "LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;".split('\n');
+file.forEach(function (line) {
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     var l = line.split(';');
     for (var i = 0; i < l.length; i++) {
         l[i] = l[i].trim();
@@ -36,6 +49,7 @@ f.forEach(function (line) {
     var yard = l[9];
     var dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
+<<<<<<< HEAD
     if (allergy === "False") {
         hypoAllergy.push(dogObject);
     }
@@ -46,6 +60,12 @@ console.log(newArray);
 //console.log(hypoAllergy);
 //console.log(newArray);
 //import {Dog, hypoAllergy, newArray} from './dogObjects.js';
+=======
+    if (allergy) {
+        hypoAllergy.push(dogObject);
+    }
+});
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 var enterBtn = document.querySelector("button");
 var header3 = document.querySelector("h3");
 var v = new Array();
@@ -68,11 +88,19 @@ function getD() {
     var training = trainingElm.value;
     var yardElm = document.querySelector("#yard");
     var yard = yardElm.value;
+<<<<<<< HEAD
     if (allergies === "False") {
         v = hypoAllergy;
     }
     else {
         v = newArray;
+=======
+    if (allergies === 'true') {
+        list = hypoAllergy;
+    }
+    else {
+        list = newArray;
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     }
     for (var i = 0; i < v.length; i++) {
         if (v[i].weight === weightRange) {
@@ -104,6 +132,7 @@ function getD() {
             v[i].points += 2;
         }
     }
+<<<<<<< HEAD
 }
 var max = 0;
 var breedName = "";
@@ -193,3 +222,17 @@ enterBtn.onclick = getD;
 }
 
 let dog1 = new Dog(true,[50,50],'aggressive');*/ 
+=======
+    var max = 0;
+    var breedName = "";
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].points > max) {
+            max = list[i].points;
+            breedName = list[i].breedName;
+        }
+    }
+    console.log(breedName);
+    console.log(list);
+}
+enterBtn.onclick = getDog;
+>>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
