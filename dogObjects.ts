@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-class Dog {
+export class Dog {
     breedName : string;
     allergy : boolean;
     weight : Number[];
@@ -15,7 +15,12 @@ class Dog {
     }
 }
 
-let newArray : Object[] = new Array();
+export let newArray : Object[] = new Array();
+
+export let hypoAllergy : Object[] = new Array();
+
+
+
 const file = fs.readFileSync('allDogs.txt','utf-8').split('\n');
 file.forEach((line)=>{
     let l = line.split(';');
@@ -25,12 +30,12 @@ file.forEach((line)=>{
     let personality : string = l[3].trim();
     let dogObject = new Dog(dogName, allergy, weightRange, personality);
     newArray.push(dogObject);
+    if (allergy){
+        hypoAllergy.push(dogObject)
+    }
 })
 
-<<<<<<< HEAD:dogObjects.ts
-console.log(newArray);
-=======
+console.log(hypoAllergy)
 console.log(newArray);
 
 
->>>>>>> 370789feee9aa5672253d15036f78c4ee627cf28:algorithm.ts
