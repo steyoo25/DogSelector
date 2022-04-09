@@ -2,7 +2,7 @@ import * as fs from 'fs';
 export class Dog {
     breedName : string;
     allergy : boolean;
-    weight : string;
+    kidsAge : string;
     personality : string;
     size : string;
     time : string;
@@ -12,10 +12,10 @@ export class Dog {
     yard : string;
     point : number;
 
-    constructor(breedName : string, allergy : boolean, weight : string, personality : string, size : string, time : string, cost : string, aorh : string, train : string, yard : string,){
+    constructor(breedName : string, allergy : boolean, kidsAge : string, personality : string, size : string, time : string, cost : string, aorh : string, train : string, yard : string,){
         this.breedName = breedName;
         this.allergy = allergy;
-        this.weight = weight;
+        this.kidsAge = kidsAge;
         this.personality = personality;
         this.size = size;
         this.time = time;
@@ -38,7 +38,7 @@ file.forEach((line)=>{
     }
     let dogName : string = l[0];
     let allergy : boolean = Boolean(l[1]);
-    let weightRange : string = l[2];
+    let kidsAge : string = l[2];
     let personality : string = l[3];
     let size : string = l[4];
     let time : string = l[5];
@@ -46,7 +46,7 @@ file.forEach((line)=>{
     let aorh : string = l[7];
     let train : string = l[8];
     let yard : string = l[9];
-    let dogObject = new Dog(dogName, allergy, weightRange, personality, size, time, cost, aorh, train, yard);
+    let dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
     if (allergy){
         hypoAllergy.push(dogObject)
