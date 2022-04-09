@@ -27,4 +27,10 @@ file.forEach((line)=>{
     newArray.push(dogObject);
 })
 
+<<<<<<< HEAD:dogObjects.ts
 console.log(newArray);
+=======
+console.log(newArray);
+
+
+>>>>>>> 370789feee9aa5672253d15036f78c4ee627cf28:algorithm.ts

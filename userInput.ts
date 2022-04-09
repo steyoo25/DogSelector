@@ -1,5 +1,10 @@
 const enterBtn = document.querySelector("button") as HTMLButtonElement;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 370789feee9aa5672253d15036f78c4ee627cf28
 document.addEventListener("click", (event: MouseEvent) =>{
 
     let allergiesElm = document.querySelector("#allergies") as HTMLSelectElement;
@@ -24,12 +29,10 @@ document.addEventListener("click", (event: MouseEvent) =>{
 })
 
 
-class userInput {
-    allergy : a
-}
 
 
- 
+
+
 
 
 
