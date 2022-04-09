@@ -9,8 +9,27 @@ body {
     margin: 0 auto;
 }
 
-p, h1, select, label {
-    font-family: Helvetica, Verdana, Arial, sans-serif;
+h1 {
+    font-family: 'Righteous';
     text-align: center;
+<<<<<<< HEAD
     /*so it can be pushed*/
+=======
+    font-size : 35;
+}
+
+select, label {
+    display : grid;
+    font-size: 14px;
+    grid-template-columns: auto auto;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+select {
+    width: 20em;
+>>>>>>> 5e935e64e8ca0b55de7c61d850659a838c4b5e4a
 }
