@@ -11,21 +11,18 @@ var Dog = /** @class */ (function () {
     return Dog;
 }());
 var newArray = new Array();
-var secondArray = 0;
-fs.readFile('allDogs.txt', 'utf-8', function (err, data) {
-    if (err)
-        throw err;
-    var dogs = data.split('\n');
-    dogs.forEach(function (line) {
-        var l = line.split(';');
-        var dogName = l[0].trim();
-        var allergy = Boolean(l[1].trim());
-        var weightRange = [Number(l[2].split(',')[0]), Number(l[2].split(',')[1])];
-        var personality = l[3].trim();
-        var dogObject = new Dog(dogName, allergy, weightRange, personality);
-        newArray.push(dogObject);
-    });
-    console.log(newArray);
-    secondArray = newArray;
+var file = fs.readFileSync('allDogs.txt', 'utf-8').split('\n');
+file.forEach(function (line) {
+    var l = line.split(';');
+    var dogName = l[0].trim();
+    var allergy = Boolean(l[1].trim());
+    var weightRange = [Number(l[2].split(',')[0]), Number(l[2].split(',')[1])];
+    var personality = l[3].trim();
+    var dogObject = new Dog(dogName, allergy, weightRange, personality);
+    newArray.push(dogObject);
 });
-console.log(secondArray);
+console.log(newArray);
+// while (newArray !== []){
+//     console.log("")
+// // }
+// console.log(newArray);
