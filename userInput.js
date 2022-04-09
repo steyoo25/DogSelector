@@ -49,7 +49,6 @@ file.forEach(function (line) {
     var yard = l[9];
     var dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
-<<<<<<< HEAD
     if (allergy === "False") {
         hypoAllergy.push(dogObject);
     }
@@ -60,12 +59,6 @@ console.log(newArray);
 //console.log(hypoAllergy);
 //console.log(newArray);
 //import {Dog, hypoAllergy, newArray} from './dogObjects.js';
-=======
-    if (allergy) {
-        hypoAllergy.push(dogObject);
-    }
-});
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 var enterBtn = document.querySelector("button");
 var header3 = document.querySelector("h3");
 var v = new Array();
@@ -88,19 +81,11 @@ function getD() {
     var training = trainingElm.value;
     var yardElm = document.querySelector("#yard");
     var yard = yardElm.value;
-<<<<<<< HEAD
-    if (allergies === "False") {
-        v = hypoAllergy;
-    }
-    else {
-        v = newArray;
-=======
     if (allergies === 'true') {
         list = hypoAllergy;
     }
     else {
         list = newArray;
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     }
     for (var i = 0; i < v.length; i++) {
         if (v[i].weight === weightRange) {
@@ -132,7 +117,6 @@ function getD() {
             v[i].points += 2;
         }
     }
-<<<<<<< HEAD
 }
 var max = 0;
 var breedName = "";
@@ -222,17 +206,3 @@ enterBtn.onclick = getD;
 }
 
 let dog1 = new Dog(true,[50,50],'aggressive');*/ 
-=======
-    var max = 0;
-    var breedName = "";
-    for (var i = 0; i < list.length; i++) {
-        if (list[i].points > max) {
-            max = list[i].points;
-            breedName = list[i].breedName;
-        }
-    }
-    console.log(breedName);
-    console.log(list);
-}
-enterBtn.onclick = getDog;
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
