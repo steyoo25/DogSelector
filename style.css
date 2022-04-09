@@ -12,9 +12,6 @@ body {
 h1 {
     font-family: 'Righteous';
     text-align: center;
-<<<<<<< HEAD
-    /*so it can be pushed*/
-=======
     font-size : 35;
 }
 
@@ -35,5 +32,4 @@ label {
 
 select {
     width: 20em;
->>>>>>> 5e935e64e8ca0b55de7c61d850659a838c4b5e4a
 }
