@@ -42,6 +42,12 @@ button {
     margin: 10px 10px 10px 10px;
 }
 
+.twocolumn {
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: auto auto;
+}
+
 label {
     font-size: 16px;
 }
@@ -100,4 +106,19 @@ h4 {
     word-break: break-all;
     line-height: 16px;
     font-size: 14px;
+    width: 20em;
+}
+
+button {
+    width: 10em;
+    border: 2px solid rgb(71, 103, 163);
+    background-color: cornflowerblue;
+    margin: 10px 10px 10px 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
 }
