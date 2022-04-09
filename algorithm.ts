@@ -12,9 +12,10 @@ class Dog {
         this.personality = personality;
     }
 }
-let newArray : Object[] = new Array();
-let secondArray : Object = 0;
-fs.readFile('allDogs.txt','utf-8',(err,data)=>{
+let newArray : string[] = [];
+
+async function ('allDogs.txt','utf-8',(err,data)=>{
+    const newArray : Object[] = await new Array();
     if (err) throw err;
     let dogs : string[] = data.split('\n');
     dogs.forEach((line)=>{
@@ -25,6 +26,8 @@ fs.readFile('allDogs.txt','utf-8',(err,data)=>{
         let personality : string = l[3].trim();
         let dogObject = new Dog(dogName, allergy, weightRange, personality);
         newArray.push(dogObject);
-    });
-    console.log(newArray);
+    };
+    console.log(newArray)
 });
+
+await console.log(newArray)
