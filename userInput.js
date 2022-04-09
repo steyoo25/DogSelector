@@ -35,6 +35,7 @@ file.forEach(function (line) {
     var yard = l[9];
     var dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
+<<<<<<< HEAD
     if (allergy === "False") {
         hypoAllergy.push(dogObject);
     }
@@ -45,10 +46,15 @@ console.log(newArray);
 //console.log(hypoAllergy);
 //console.log(newArray);
 //import {Dog, hypoAllergy, newArray} from './dogObjects.js';
+=======
+    if (allergy) {
+        hypoAllergy.push(dogObject);
+    }
+});
+>>>>>>> d28d4a22a2818d82c83850beeeaa0a26845cd88a
 var enterBtn = document.querySelector("button");
-var header3 = document.querySelector("h3");
-var v = new Array();
-function getD() {
+var list = new Array();
+function getDog() {
     var allergiesElm = document.querySelector("#allergies");
     var allergies = allergiesElm.value;
     var kidsElm = document.querySelector("#kids");
@@ -73,36 +79,37 @@ function getD() {
     else {
         list = newArray;
     }
-    for (var i = 0; i < v.length; i++) {
-        if (v[i].weight === weightRange) {
-            v[i].points += 30;
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].weight === weightRange) {
+            list[i].points += 30;
         }
         switch (true) {
             case (cost === "more300"):
             case (cost === "between100300"):
-            case (cost === v[i].cost):
-                v[i].points += 20;
+            case (cost === list[i].cost):
+                list[i].points += 20;
                 break;
         }
-        if (homeType == "house" || (homeType === v[i].aroh)) {
-            v[i].points += 15;
+        if (homeType == "house" || (homeType === list[i].aroh)) {
+            list[i].points += 15;
         }
-        if (time === "coupleHrs" || time === "fewHrs" || time === v[i].time) {
-            v[i].points += 15;
+        if (time === "coupleHrs" || time === "fewHrs" || time === list[i].time) {
+            list[i].points += 15;
         }
-        if (personality === "friendly" || personality === v[i].personality) {
-            v[i].points += 10;
+        if (personality === "friendly" || personality === list[i].personality) {
+            list[i].points += 10;
         }
-        if (kids === "mature" || kids === "young" || kids === "false" || kids === v[i].kidsAge) {
-            v[i].points += 5;
+        if (kids === "mature" || kids === "young" || kids === "false" || kids === list[i].kidsAge) {
+            list[i].points += 5;
         }
-        if (training === "idc" || training === v[i].train) {
-            v[i].points += 3;
+        if (training === "idc" || training === list[i].train) {
+            list[i].points += 3;
         }
-        if (yard === "big" || yard === v[i].yard) {
-            v[i].points += 2;
+        if (yard === "big" || yard === list[i].yard) {
+            list[i].points += 2;
         }
     }
+<<<<<<< HEAD
 }
 var max = 0;
 var breedName = "";
@@ -192,3 +199,17 @@ enterBtn.onclick = getD;
 }
 
 let dog1 = new Dog(true,[50,50],'aggressive');*/ 
+=======
+    var max = 0;
+    var breedName = "";
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].points > max) {
+            max = list[i].points;
+            breedName = list[i].breedName;
+        }
+    }
+    console.log(breedName);
+    console.log(list);
+}
+enterBtn.onclick = getDog;
+>>>>>>> d28d4a22a2818d82c83850beeeaa0a26845cd88a
