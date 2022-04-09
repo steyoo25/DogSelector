@@ -98,13 +98,19 @@ function getDog() {
     }
     var max = 0;
     var breedName = "";
+    var breedNames = new Array();
+    var pts = new Array();
     for (var i = 0; i < list.length; i++) {
         if (list[i].points > max) {
             max = list[i].points;
             breedName = list[i].breedName;
         }
+        breedNames.push(list[i].breedName);
+        pts.push(list[i].points);
     }
     console.log(breedName);
     console.log(list);
+    console.log(breedNames);
+    console.log(pts);
 }
 enterBtn.onclick = getDog;

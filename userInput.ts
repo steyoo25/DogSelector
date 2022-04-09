@@ -115,14 +115,20 @@ function getDog(){
     }
     let max : number = 0;
     let breedName : string = "";
+    let breedNames : String[] = new Array();
+    let pts : Number[] = new Array();
     for (let i = 0; i < list.length; i ++){
         if (list[i].points > max){
             max = list[i].points
             breedName = list[i].breedName
         }
+        breedNames.push(list[i].breedName)
+        pts.push(list[i].points)
     }
     console.log(breedName)
     console.log(list)
+    console.log(breedNames)
+    console.log(pts);
 }
 
 enterBtn.onclick = getDog;
