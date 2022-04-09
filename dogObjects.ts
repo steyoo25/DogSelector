@@ -55,3 +55,8 @@ file.forEach((line)=>{
 
 console.log(hypoAllergy)
 console.log(newArray);
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 36063011fb7a3a3d970d302baa404bc0ebd944ea
