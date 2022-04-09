@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-//import * as fs from 'fs';
-=======
 // import {hypoAllergy, newArray} from './dogObjects.js';
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 var Dog = /** @class */ (function () {
     function Dog(breedName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard) {
         this.breedName = breedName;
@@ -15,24 +11,14 @@ var Dog = /** @class */ (function () {
         this.aorh = aorh;
         this.train = train;
         this.yard = yard;
-<<<<<<< HEAD
-        this.point = 0;
-=======
         this.points = 0;
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     }
     return Dog;
 }());
 var newArray = new Array();
 var hypoAllergy = new Array();
-<<<<<<< HEAD
-//const file = fs.readFileSync('allDogs.txt','utf-8').split('\n');
-var f = "LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;".split('\n');
-f.forEach(function (line) {
-=======
 var file = "LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;".split('\n');
 file.forEach(function (line) {
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     var l = line.split(';');
     for (var i = 0; i < l.length; i++) {
         l[i] = l[i].trim();
