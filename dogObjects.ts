@@ -53,5 +53,5 @@ file.forEach((line)=>{
     }
 })
 
-console.log(hypoAllergy)
+console.log(hypoAllergy);
 console.log(newArray);
