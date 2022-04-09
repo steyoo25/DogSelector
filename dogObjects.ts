@@ -43,7 +43,10 @@ file.forEach((line)=>{
     let size : string = l[4];
     let time : string = l[5];
     let cost : string = l[6];
-    let dogObject = new Dog(dogName, allergy, weightRange, personality);
+    let aorh : string = l[7];
+    let train : string = l[8];
+    let yard : string = l[9];
+    let dogObject = new Dog(dogName, allergy, weightRange, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
     if (allergy){
         hypoAllergy.push(dogObject)
