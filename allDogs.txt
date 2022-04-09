@@ -1,3 +1,10 @@
-friendly;true;50,80;friendly
-aggressiveDog;false;90,100;aggressive
-lazyDog;false;60,90;lazy
+True;vYoung;friendly;medium;fewHrs;between100300;a;easy;big;
+True;young;aggressive;large;fewHrs;less100;h;easy;big;
+True;vYoung;aggressive;medium;fewHrs;between100300;a;easy;big;
+True;vYoung;friendly;vSmall;lessthan1hr;between100300;a;idc;smallNone;
+True;young;friendly;medium;lessthan1hr;between100300;a;idc;smallNone;
+False;vYoung;friendly;vSmall;fewHrs;less100;a;easy;smallNone;
+False;vYoung;aggressive;vSmall;fewHrs;between100300;a;easy;smallNone;
+False;vYoung;aggressive;medium;fewHrs;between100300;a;easy;big;
+True;young;aggressive;small;fewHrs;between100300;h;easy;smallNone;
+True;young;aggressive;large;fewHrs;between100300;a;easy;big;
