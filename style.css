@@ -18,15 +18,19 @@ h1 {
     font-size : 35;
 }
 
-select, label {
+.twocolumn {
     display : grid;
     font-size: 14px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
     grid-template-columns: auto auto;
 }
 
 label {
     font-weight: bold;
     font-size: 18px;
+    text-align: right;
 }
 
 select {
