@@ -16,13 +16,8 @@ h1 {
     font-size : 35;
 }
 
-<<<<<<< HEAD
-select, label {
-    display : grid;
-=======
 .twocolumn {
     display: grid;
->>>>>>> d27f0822852ee068f0299a0355735b502cfb0f7a
     font-size: 14px;
     grid-template-columns: auto auto;
 }
@@ -34,8 +29,6 @@ label {
 
 select {
     width: 20em;
-<<<<<<< HEAD
-=======
 }
 
 button {
@@ -50,5 +43,4 @@ button {
     align-items: center;
     justify-content: center;
     row-gap: 10px;
->>>>>>> d27f0822852ee068f0299a0355735b502cfb0f7a
 }
