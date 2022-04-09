@@ -46,6 +46,7 @@ var Dog = /** @class */ (function () {
     }
     return Dog;
 }());
+<<<<<<< HEAD
 var newArray = [];
 function rf() {
     return __awaiter(this, void 0, void 0, function () {
@@ -72,3 +73,21 @@ function rf() {
 }
 rf();
 console.log(newArray);
+=======
+var newArray = new Array();
+var file = fs.readFileSync('allDogs.txt', 'utf-8').split('\n');
+file.forEach(function (line) {
+    var l = line.split(';');
+    var dogName = l[0].trim();
+    var allergy = Boolean(l[1].trim());
+    var weightRange = [Number(l[2].split(',')[0]), Number(l[2].split(',')[1])];
+    var personality = l[3].trim();
+    var dogObject = new Dog(dogName, allergy, weightRange, personality);
+    newArray.push(dogObject);
+});
+console.log(newArray);
+// while (newArray !== []){
+//     console.log("")
+// // }
+// console.log(newArray);
+>>>>>>> d137285b6ceca4ca8e7a226afad8fc4715ed844c

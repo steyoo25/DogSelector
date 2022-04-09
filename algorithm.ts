@@ -12,22 +12,22 @@ class Dog {
         this.personality = personality;
     }
 }
-let newArray : string[] = [];
 
-async function ('allDogs.txt','utf-8',(err,data)=>{
-    const newArray : Object[] = await new Array();
-    if (err) throw err;
-    let dogs : string[] = data.split('\n');
-    dogs.forEach((line)=>{
-        let l = line.split(';');
-        let dogName : string = l[0].trim();
-        let allergy : boolean = Boolean(l[1].trim());
-        let weightRange : number[] = [Number(l[2].split(',')[0]),Number(l[2].split(',')[1])];
-        let personality : string = l[3].trim();
-        let dogObject = new Dog(dogName, allergy, weightRange, personality);
-        newArray.push(dogObject);
-    };
-    console.log(newArray)
-});
+let newArray : Object[] = new Array();
+const file = fs.readFileSync('allDogs.txt','utf-8').split('\n');
+file.forEach((line)=>{
+    let l = line.split(';');
+    let dogName : string = l[0].trim();
+    let allergy : boolean = Boolean(l[1].trim());
+    let weightRange : number[] = [Number(l[2].split(',')[0]),Number(l[2].split(',')[1])];
+    let personality : string = l[3].trim();
+    let dogObject = new Dog(dogName, allergy, weightRange, personality);
+    newArray.push(dogObject);
+})
 
-await console.log(newArray)
+console.log(newArray);
+
+// while (newArray !== []){
+//     console.log("")
+// // }
+// console.log(newArray);
