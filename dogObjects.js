@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.hypoAllergy = exports.newArray = exports.Dog = void 0;
+exports.hypoAllergy = exports.newArray = void 0;
 var fs = require("fs");
 var Dog = /** @class */ (function () {
     function Dog(breedName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard) {
@@ -18,7 +18,6 @@ var Dog = /** @class */ (function () {
     }
     return Dog;
 }());
-exports.Dog = Dog;
 exports.newArray = new Array();
 exports.hypoAllergy = new Array();
 var file = fs.readFileSync('allDogs.txt', 'utf-8').split('\n');
@@ -43,5 +42,4 @@ file.forEach(function (line) {
         exports.hypoAllergy.push(dogObject);
     }
 });
-console.log(exports.hypoAllergy);
 console.log(exports.newArray);

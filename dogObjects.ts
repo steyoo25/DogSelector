@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-export class Dog {
+class Dog {
     breedName : string;
     allergy : boolean;
     kidsAge : string;
@@ -53,5 +53,3 @@ file.forEach((line)=>{
     }
 })
 
-console.log(hypoAllergy);
-console.log(newArray);
