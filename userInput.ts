@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 
 //import * as fs from 'fs';
-=======
-// import {hypoAllergy, newArray} from './dogObjects.js';
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 class Dog {
     breedName : string;
     allergy : string;
@@ -35,16 +31,9 @@ class Dog {
 let newArray : Object[] = new Array();
 let hypoAllergy : Object[] = new Array();
 
-<<<<<<< HEAD
-//const file = fs.readFileSync('allDogs.txt','utf-8').split('\n');
-const f = `LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;`.split('\n')
-f.forEach((line) => {
-let l = line.split(';');
-=======
 const file = `LabradorRetriever;True;vYoung;friendly;medium;fewHrs;between100300;apartment;easy;big;\nGermanShepherd;True;young;aggressive;large;fewHrs;less100;house;easy;big;\nGoldenRetriever;True;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nFrenchBulldog;True;vYoung;friendly;vSmall;lessthan1hr;between100300;apartment;idc;smallNone;\nBulldog;True;young;friendly;medium;lessthan1hr;between100300;apartment;idc;smallNone;\nToyPoodle;False;vYoung;friendly;vSmall;fewHrs;less100;apartment;easy;smallNone;\nMiniaturePoodle;False;vYoung;aggressive;vSmall;fewHrs;between100300;apartment;easy;smallNone;\nStandardPoodle;False;vYoung;aggressive;medium;fewHrs;between100300;apartment;easy;big;\nBeagles;True;young;aggressive;small;fewHrs;between100300;house;easy;smallNone;\nRottweilers;True;young;aggressive;large;fewHrs;between100300;apartment;easy;big;`.split('\n');
 file.forEach((line)=>{
     let l = line.split(';');
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     for(let i = 0; i < l.length; i++){
         l[i] = l[i].trim();
     }
@@ -60,7 +49,6 @@ file.forEach((line)=>{
     let yard : string = l[9];
     let dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     newArray.push(dogObject);
-<<<<<<< HEAD
     if (allergy === "False"){
         hypoAllergy.push(dogObject)
     }
@@ -73,24 +61,13 @@ console.log(newArray)
 //console.log(newArray);
 
 //import {Dog, hypoAllergy, newArray} from './dogObjects.js';
-=======
-    if (allergy){
-        hypoAllergy.push(dogObject)
-    }
-});
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
 
 const enterBtn = document.querySelector("button") as HTMLButtonElement;
 const header3 = document.querySelector("h3") as HTMLHeadElement
 
 let v = new Array();
 
-<<<<<<< HEAD
-
-function getD(){    
-=======
 function getDog(){    
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
     let allergiesElm = document.querySelector("#allergies") as HTMLSelectElement;
     let allergies = allergiesElm.value;
     let kidsElm = document.querySelector("#kids") as HTMLSelectElement;
@@ -110,7 +87,6 @@ function getDog(){
     let yardElm = document.querySelector("#yard") as HTMLSelectElement;
     let yard = yardElm.value;
 
-<<<<<<< HEAD
     if (allergies === "False"){
         v = hypoAllergy
     } else {
@@ -120,17 +96,6 @@ function getDog(){
     for (let i = 0; i < v.length; i ++){
         if (v[i].weight === weightRange){
             v[i].points += 30
-=======
-    if (allergies==='true'){
-        list = hypoAllergy
-    }
-    else {
-        list = newArray
-    }
-    for (let i = 0; i < list.length; i ++){
-        if (list[i].weight === weightRange){
-            list[i].points += 30
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
         } 
         switch(true){
             case (cost === "more300"):
@@ -171,7 +136,6 @@ let breedName : string = "";
         }
     }
     console.log(breedName)
-<<<<<<< HEAD
 
 header3.textContent = breedName    
 enterBtn.onclick = getD;
@@ -260,9 +224,3 @@ enterBtn.onclick = getD;
 }
 
 let dog1 = new Dog(true,[50,50],'aggressive');*/
-=======
-    console.log(list)
-}
-
-enterBtn.onclick = getDog;
->>>>>>> 9ce913bb9a7eb7316e1997d8d895b7c2644e719c
