@@ -1,6 +1,5 @@
 const enterBtn = document.querySelector("button") as HTMLButtonElement;
 
-
 document.addEventListener("click", (event: MouseEvent) =>{
 
     let allergiesElm = document.querySelector("#allergies") as HTMLSelectElement;
