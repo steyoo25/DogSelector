@@ -12,28 +12,20 @@ body {
 h1 {
     font-family: 'Righteous';
     text-align: center;
-<<<<<<< HEAD
-    /*so it can be pushed*/
-=======
     font-size : 35;
 }
 
-.twocolumn {
+select, label {
     display : grid;
     font-size: 14px;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
     grid-template-columns: auto auto;
 }
 
 label {
     font-weight: bold;
     font-size: 18px;
-    text-align: right;
 }
 
 select {
     width: 20em;
->>>>>>> 5e935e64e8ca0b55de7c61d850659a838c4b5e4a
 }

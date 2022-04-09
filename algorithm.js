@@ -1,19 +1,21 @@
-var friendlyDog = {
-    'allergy': true,
-    'weight': [50, 80],
-    'personality': 'friendly'
-};
-var aggressiveDog = {
-    'allergy': false,
-    'weight': [90, 100],
-    'personality': 'aggressive'
-};
-var lazyDog = {
-    'allergy': false,
-    'weight': [60, 90],
-    'personality': 'lazy'
-};
-var allDogs = [friendlyDog, aggressiveDog, lazyDog];
-allDogs.forEach(function (elm) {
-    console.log(elm);
+"use strict";
+exports.__esModule = true;
+var fs = require("fs");
+fs.readFile('allDogs.txt', 'utf-8', function (err, data) {
+    if (err)
+        throw err;
+    var newArray = data.split('\n');
+    newArray.forEach(function (line) {
+        console.log(line);
+        console.log('OISDJFOSDJIFJSDIOFJDOIJDSIOFJOIF');
+    });
 });
+var Dog = /** @class */ (function () {
+    function Dog(allergy, weight, personality) {
+        this.allergy = allergy;
+        this.weight = weight;
+        this.personality = personality;
+    }
+    return Dog;
+}());
+var dog1 = new Dog(true, [50, 50], 'aggressive');
