@@ -42,11 +42,18 @@ document.addEventListener("click", (event: MouseEvent) =>{
                 list[i].points += 20
                 break;
         }
-        if (homeType == "house" || (homeType === list[i].aroh))
-            list[i] += 15
+        if (homeType == "house" || (homeType === list[i].aroh)) {
+            list[i].points += 15
         }
-        if (time ===)
-
+        if (time === "coupleHrs" || time === "fewHrs" || time === list[i].time){
+            list[i].points += 15
+        }
+        if (personality === "friendly" || personality === list[i].personality){
+            list[i].points += 10
+        }
+        if (kids === "mature" || kids === "young" || kids === "false" || kids === list[i].){
+            list[i].points += 5
+        }
     }
 
 })
