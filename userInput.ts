@@ -1,7 +1,7 @@
 import {Dog, hypoAllergy, newArray} from './dogObjects.js';
-
-
 const enterBtn = document.querySelector("button") as HTMLButtonElement;
+
+let list = new Array();
 
 
 document.addEventListener("click", (event: MouseEvent) =>{
@@ -25,11 +25,29 @@ document.addEventListener("click", (event: MouseEvent) =>{
     let yardElm = document.querySelector("#yard") as HTMLSelectElement;
     let yard = yardElm.value;
 
-    
+    if (allergies){
+        list = hypoAllergy
+    } else {
+        list = newArray
+    }
 
+    for (let i = 0; i < list.length; i ++){
+        if (list[i].weight === weightRange){
+            list[i].points += 30
+        } 
+        switch(true){
+            case (cost === "more300"):
+            case (cost === "between100300"): 
+            case (cost === list[i].cost):
+                list[i].points += 20
+                break;
+        }
+        if (homeType == "house" || (homeType === list[i].aroh))
+            list[i] += 15
+        }
+        if (time ===)
 
-
-
+    }
 
 })
 
