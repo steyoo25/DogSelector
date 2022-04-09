@@ -27,7 +27,4 @@ file.forEach((line)=>{
 
 console.log(newArray);
 
-// while (newArray !== []){
-//     console.log("")
-// // }
-// console.log(newArray);
+
