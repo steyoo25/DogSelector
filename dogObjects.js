@@ -3,10 +3,10 @@ exports.__esModule = true;
 exports.hypoAllergy = exports.newArray = exports.Dog = void 0;
 var fs = require("fs");
 var Dog = /** @class */ (function () {
-    function Dog(breedName, allergy, weight, personality, size, time, cost, aorh, train, yard) {
+    function Dog(breedName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard) {
         this.breedName = breedName;
         this.allergy = allergy;
-        this.weight = weight;
+        this.kidsAge = kidsAge;
         this.personality = personality;
         this.size = size;
         this.time = time;
@@ -29,7 +29,7 @@ file.forEach(function (line) {
     }
     var dogName = l[0];
     var allergy = Boolean(l[1]);
-    var weightRange = l[2];
+    var kidsAge = l[2];
     var personality = l[3];
     var size = l[4];
     var time = l[5];
@@ -37,7 +37,7 @@ file.forEach(function (line) {
     var aorh = l[7];
     var train = l[8];
     var yard = l[9];
-    var dogObject = new Dog(dogName, allergy, weightRange, personality, size, time, cost, aorh, train, yard);
+    var dogObject = new Dog(dogName, allergy, kidsAge, personality, size, time, cost, aorh, train, yard);
     exports.newArray.push(dogObject);
     if (allergy) {
         exports.hypoAllergy.push(dogObject);
