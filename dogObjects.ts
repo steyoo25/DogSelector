@@ -34,11 +34,3 @@ file.forEach((line)=>{
         hypoAllergy.push(dogObject)
     }
 })
-<<<<<<< HEAD
-
-console.log(hypoAllergy)
-console.log(newArray);
-
-
-=======
->>>>>>> f5580e6b3fcec89f1051ba9b66b707f0e29b9df5
