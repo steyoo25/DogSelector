@@ -16,13 +16,8 @@ h1, button {
     font-size : 35;
 }
 
-<<<<<<< HEAD
-.twocolumn {
-    display: grid;
-=======
 select, label {
     display : grid;
->>>>>>> f3562d654d27392cf5c455ae8d6b0b42a974d07e
     font-size: 14px;
     grid-template-columns: auto auto;
 }
@@ -34,21 +29,4 @@ label {
 
 select {
     width: 20em;
-<<<<<<< HEAD
-}
-
-button {
-    width: 10em;
-    border: 2px solid rgb(71, 103, 163);
-    background-color: cornflowerblue;
-    margin: 10px 10px 10px 10px;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    row-gap: 10px;
-=======
->>>>>>> f3562d654d27392cf5c455ae8d6b0b42a974d07e
 }
