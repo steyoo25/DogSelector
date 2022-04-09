@@ -1,0 +1,16 @@
+html {
+    background-color:cornflowerblue;
+    background-size:300px;
+}
+
+body {
+    width: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+p, h1, select, label {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    text-align: center;
+    /*so it can be pushed*/
+}
