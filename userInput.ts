@@ -1,3 +1,6 @@
+import {Dog, hypoAllergy, newArray} from './dogObjects.js';
+
+
 const enterBtn = document.querySelector("button") as HTMLButtonElement;
 
 
@@ -22,15 +25,19 @@ document.addEventListener("click", (event: MouseEvent) =>{
     let yardElm = document.querySelector("#yard") as HTMLSelectElement;
     let yard = yardElm.value;
 
+    
+
+
+
+
+
 })
 
 
-class userInput {
-    allergy : a
-}
 
 
- 
+
+
 
 
 
